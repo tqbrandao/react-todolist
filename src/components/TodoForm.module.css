@@ -1,9 +1,9 @@
-.searchbar-container {
+.form-container {
   width: 800px;
   margin: 0 auto;
 }
 
-.search-input {
+.form-input {
   width: 50%;
   font-family: inherit;
 }

@@ -3,8 +3,9 @@ import TodoItem from "./TodoItem";
 import classes from "./TodoItemsList.module.css";
 
 function TodoItemsList(props) {
+  console.log(props.apiData);
   const todoList = props.apiData.map((todo) => (
-    <TodoItem title={todo.title} key={todo.id} />
+    <TodoItem title={todo.title} key={todo.id} completed={todo.completed} />
   ));
 
   return (

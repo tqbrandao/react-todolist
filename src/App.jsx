@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
+import TodoForm from "./components/TodoForm";
 import TodoItemsList from "./components/TodoItemsList";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <SearchBar></SearchBar>
+      <TodoForm />
       {apiData && <TodoItemsList apiData={apiData}></TodoItemsList>}
     </div>
   );
