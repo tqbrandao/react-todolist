@@ -3,9 +3,18 @@ import TodoItem from "./TodoItem";
 import classes from "./TodoItemsList.module.css";
 
 function TodoItemsList(props) {
-  console.log(props.apiData);
+  const removeTodoHandler = (id) => {
+    props.onRemove(id);
+  };
+
   const todoList = props.apiData.map((todo) => (
-    <TodoItem title={todo.title} key={todo.id} completed={todo.completed} />
+    <TodoItem
+      title={todo.title}
+      key={todo.id}
+      completed={todo.completed}
+      id={todo.id}
+      onRemoveTodo={removeTodoHandler}
+    />
   ));
 
   return (

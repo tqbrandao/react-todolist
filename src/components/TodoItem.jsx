@@ -10,6 +10,10 @@ function TodoItem(props) {
     setChecked(!checked);
   };
 
+  // const onDeleteHandler = (props) => {
+  //   console.log("Hello!!");
+  // };
+
   return (
     <li className={classes.todo}>
       <label className={checked ? classes.checked : ""}>
@@ -19,8 +23,10 @@ function TodoItem(props) {
           onChange={onCheckHandler}
         ></input>
         {props.title}
-        <Button btnType="delete">Remover</Button>
       </label>
+      <Button btnType="delete" onClick={() => props.onRemoveTodo(props.id)}>
+        Remover
+      </Button>
     </li>
   );
 }
