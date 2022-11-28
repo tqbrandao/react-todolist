@@ -1,0 +1,12 @@
+.items-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.todo-items {
+  list-style: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding-left: 0;
+  background: #fff;
+}

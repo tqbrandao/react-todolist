@@ -1,0 +1,28 @@
+button {
+  font-size: 14px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-delete {
+  float: right;
+  background-color: #d9534f;
+  padding: 4px 10px;
+}
+
+.btn-add {
+  background-color: #4f7bd9;
+  padding: 7px 15px;
+  margin-left: 10px;
+}
+
+.btn-add:hover {
+  background-color: #283e6d;
+}
+
+.btn-delete:hover {
+  background-color: #6d2a28;
+}
