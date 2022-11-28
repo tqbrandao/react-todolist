@@ -2,12 +2,12 @@ import React from "react";
 import Button from "./Button";
 import classes from "./TodoItem.module.css";
 
-function TodoItem() {
+function TodoItem(props) {
   return (
     <li className={classes.todo}>
       <label>
         <input type="checkbox"></input>
-        Torino de rivia
+        {props.title}
         <Button btnType="delete">Remover</Button>
       </label>
     </li>
